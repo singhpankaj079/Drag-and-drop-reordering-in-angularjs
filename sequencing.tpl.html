@@ -1,0 +1,107 @@
+<div class="attributesequencing">
+   <div class="main-container">
+       <div class="page-title">{{'MEMBER_PANELS' | translate}}</div>
+       <p class="page-subtitle">{{'MEMBER_PANELS_SUBTITLE' | translate}}</p>
+       <div class="ordering-sections">
+           <div class="attribute-panel-section">
+                <div class="attribute-panel-title">{{'ATTRIBUTE_PANEL' | translate}}</div>
+                <div class="attribute-panel-left">
+                    <div class="panel-box search-box">
+                        <input type="text" placeholder="{{'CREATE_NEW_PANEL' | translate}}" ng-model="new_panel_name" class="new-panel-input"/>
+                        <span class="glyphicon glyphicon-plus plus-sign" ng-click="createPanel(new_panel_name)"></span>
+                    </div>
+                    <div class="panel-box" ng-class="{'dashed-border': panels[0]===undefined}" id="1">
+                    </div>
+                    <div class="panel-box" ng-class="{'dashed-border': panels[1]===undefined}" id="2">
+                    </div>
+                    <div class="panel-box" ng-class="{'dashed-border': panels[2]===undefined}" id="3">
+                        
+                    </div>
+                </div>
+                <div class="attribute-panel-right">
+                    <div class="panel-box" ng-class="{'dashed-border': panels[3]===undefined}" id="4">
+                        
+                    </div>
+                    <div class="panel-box" ng-class="{'dashed-border': panels[7]===undefined}" id="8">
+                        
+                    </div>
+                    <div class="panel-box" ng-class="{'dashed-border': panels[4]===undefined}" id="5">
+                        
+                    </div>
+                    <div class="panel-box" ng-class="{'dashed-border': panels[8]===undefined}"id="9">
+                        
+                    </div>
+                    <div class="panel-box" ng-class="{'dashed-border': panels[5]===undefined}" id="6">
+                        
+                    </div>
+                    <div class="panel-box" ng-class="{'dashed-border': panels[9]===undefined}" id="10">
+                        
+                    </div>
+                    <div class="panel-box" ng-class="{'dashed-border': panels[6]===undefined}" id="7">
+                        
+                    </div>
+                    <div class="panel-box" ng-class="{'dashed-border': panels[10]===undefined}" id="11">
+                        
+                    </div>
+                </div>
+           </div>
+           <div class="member-attributes-section">
+                <div class="member-attributes-left">
+                    <div class="member-attributes-title">
+                        {{'MEMBER_ATTRIBUTES' | translate}}
+                    </div>
+                    <div id="attribute-search-bar">
+                        <span class="glyphicon glyphicon-search"></span>
+                        <input type="text" id="attribute-search-input" placeholder="Search" ng-model="search_text"/>
+                    </div>
+                    <div class="attribute-list">
+                        <div ng-repeat="attribute in attributelist" class="member-attribute-item">
+                            {{attribute.visible_name}} <span class="glyphicon glyphicon-plus" ng-click="createAttribute(attributelist[$index]);"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="member-attributes-right">
+                    <div class="selected-attributes-title">
+                        {{'SELECTED_ATTRIBUTES' | translate}}
+                    </div>
+                    <div class="attribute-box dashed-border" id="13">
+                        <span class="glyphicon glyphicon-plus"></span>
+                    </div>
+                    <div class="attribute-box dashed-border" id="19">
+                        <span class="glyphicon glyphicon-plus"></span>
+                    </div>
+                    <div class="attribute-box dashed-border" id="14">
+                        <span class="glyphicon glyphicon-plus"></span>
+                    </div>
+                    <div class="attribute-box dashed-border" id="20">
+                        <span class="glyphicon glyphicon-plus"></span>
+                    </div>
+                    <div class="attribute-box dashed-border" id="15">
+                        <span class="glyphicon glyphicon-plus"></span>
+                    </div>
+                    <div class="attribute-box dashed-border" id="21">
+                        <span class="glyphicon glyphicon-plus"></span>
+                    </div>
+                    <div class="attribute-box dashed-border" id="16">
+                        <span class="glyphicon glyphicon-plus"></span>
+                    </div>
+                    <div class="attribute-box dashed-border" id="22">
+                        <span class="glyphicon glyphicon-plus"></span>
+                    </div>
+                    <div class="attribute-box dashed-border" id="17">
+                        <span class="glyphicon glyphicon-plus"></span>
+                    </div>
+                    <div class="attribute-box dashed-border" id="23">
+                        <span class="glyphicon glyphicon-plus"></span>
+                    </div>
+                    <div class="attribute-box dashed-border" id="18">
+                        <span class="glyphicon glyphicon-plus"></span>
+                    </div>
+                    <div class="attribute-box dashed-border" id="24">
+                        <span class="glyphicon glyphicon-plus"></span>
+                    </div>
+                </div>
+           </div>
+       </div>
+    </div>
+</div>
